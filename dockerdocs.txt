@@ -34,3 +34,86 @@ what is
 How to create a DockerFile
 
 
+documentation
+--------------
+
+Docker
+	- provides a container - to develop 
+	- provides an environment
+	- build, ship, run
+	- platform independent
+	- light weight
+
+DockerFile
+	- built into a docker image
+	- simple text file - contains commands to create a docker image
+DockerImage
+	- run as a docker container
+
+DockerFile
+	- 'FROM' keyword - a basic image
+	- 'RUN' cmds - has cmds for the image
+	-  simple txt file - a user could call to assemble an image
+
+Dockerhub
+	- place to store docker projects
+	- projects clone from dockerhub
+
+to run an image:
+	docker run <image>
+
+to build an image
+	docker image build
+
+create a docker file
+-------------------
+	DockerFile //without extension
+	FROM -> base image from which docker file is built
+	CMD -> array of cmds eg.["echo", "hello world"]
+
+eg. alphine -> base image
+dockerfile ======
+FROM alphine
+CMD["echo", "hello world"]
+=================
+
+$docker build . //current directory
+step1...
+step2...
+removes any intermediate container created
+build -> succesful  --> imageID
+
+$docker run --name <dockerContainerName> <imageID>
+
+eg ===
+$docker run --name test 2dffd4ab893a
+====
+^runs the cmd echo hello world
+
+eg 2 
+-------------------------------
+script.sh //shell file containing cmds -> echo hello world from script file
+^in same directory as DockerFile
+
+DockerFile
+====
+FROM alphine
+COPY script.sh /script.sh   // copy within current directory
+CMD ["/script.sh"]          // run copied script file
+===
+
+build and run ===
+o/p -> hello world from script file
+
+--------------------------------
+
+if cmd like 'top' is used, the container may not end (by ctrl+c)
+use another tab(terminal) - enter 'docker stop <containerYouWantToStop>'
+
+----------------
+
+Docker compose
+--------
+a tool for defining and running multi container docker applications
+$docker compose up
+$docker compose down
