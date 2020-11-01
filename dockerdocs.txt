@@ -117,3 +117,25 @@ Docker compose
 a tool for defining and running multi container docker applications
 $docker compose up
 $docker compose down
+
+
+-----------------------------
+source:
+https://www.youtube.com/watch?v=LQjaJINkQXY
+
+insights:
+Dockerfile ====
+get base image form dockerhub - scratch - basic image
+$docker build <path-to-file>
+if (on directory) : >docker build .
+
+https://docs.docker.com/engine/reference/builder/
+
+MAINTAINER name <mail@mail.com>
+comment -> starts with #
+
+$docker images
+# prints all the images built
+
+ENV cmd -> sets the environmental variable
+ENV NAME=value
