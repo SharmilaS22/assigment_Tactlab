@@ -1,0 +1,36 @@
+topics to learn
+----------------
+images
+dockerfile
+how to create a docker file
+what is dockerhub
+orchestrator
+docker swarm , dockercompose
+create a docker compose
+
+deadline
+--------------
+wednesday 9.00 am
+
+
+source:
+----------
+https://www.youtube.com/watch?v=0qotVMX-J5s
+https://www.youtube.com/watch?v=kBF6Bvth0zw
+https://www.youtube.com/watch?v=JSLpG_spOBM
+
+https://www.youtube.com/watch?v=_dfLOzuIg2o
+
+
+insights:
+-----------
+docker vs vm
+
+what is 
+	docker file
+	docker image
+	docker container
+	dockerhub
+How to create a DockerFile
+
+
