@@ -59,3 +59,15 @@ insights:
  * write to csv file
  * read csv file one by one to a document
  * add docs to mongodb
+
+
+10/11/2020
+=-=-=-=-=-=-
+learning journal with @GodlinHilda
+
+discussed concepts
+decided routing techniques
+separated tasks
+deadline fixed
+found how to use environment variable in flask
+
