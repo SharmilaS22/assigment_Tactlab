@@ -119,6 +119,10 @@ $docker compose up
 $docker compose down
 
 
+docker compose up   - last layer
+docker compose up --build - all layers
+
+
 -----------------------------
 source:
 https://www.youtube.com/watch?v=LQjaJINkQXY
