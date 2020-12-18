@@ -33,7 +33,6 @@ what is
 	dockerhub
 How to create a DockerFile
 
-
 documentation
 --------------
 
@@ -143,3 +142,44 @@ $docker images
 
 ENV cmd -> sets the environmental variable
 ENV NAME=value
+
+
+18-12-2020
+https://www.youtube.com/watch?v=MnDT1aB39hQ - basic docker - 1 hr
+https://www.youtube.com/watch?v=Qw9zlE3t8Ko -docker compose 12 mins
+
+$docker images //displays the images in the system
+$docker ps     //displays running images
+$docker ps -a  //displays running and idle image
+
+$docker rm <image_id>   //removes the instance (container)
+$docker image rm <image_id>  //removes the image file (downloaded)
+
+$docker pull <image>   //to have it locally
+
+$docker run -it -p 80:80 nginx 
+-it  iterative mode
+-p port 80:80
+nignx - name of the image
+
+$docker stop <image_id>  //stopd teh container from running (ctrl+c)
+$docker stop <name-for-container>
+
+$docker run -it -p 80:80 --name newimage nginx // (--name) allows to give custom names for container
+
+$docker start <container-name>     //to start the exited container
+
+define docker-compose
+
+build: // directory
+services: //different services defined 
+
+-d for running container in background
+
+docker-compose.yml  has configuration set
+
+Dockerfile - has FROM image
+           - COPY <directory>
+	   - RUN ["cmdpart", "cmdpart"]
+
+
